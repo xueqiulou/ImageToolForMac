@@ -86,7 +86,7 @@
                     <rect key="frame" x="180" y="86" width="120" height="32"/>
                     <buttonCell key="cell" type="push" title="选择目录压缩" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QA9-c8-fpI">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
                         <action selector="compress:" target="-2" id="VO4-ZN-g73"/>
@@ -101,18 +101,15 @@
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ez0-qk-JJN">
                     <rect key="frame" x="98" y="144" width="285" height="21"/>
                     <textFieldCell key="cell" lineBreakMode="clipping" title="本地压缩,压缩后文件会覆盖源文件" id="fww-Yb-r3q">
-                        <font key="font" size="18" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="system" size="18"/>
                         <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-bX-ILA">
-                    <rect key="frame" x="118" y="230" width="244" height="63"/>
-                    <textFieldCell key="cell" lineBreakMode="clipping" id="pWn-WK-tcT">
-                        <font key="font" size="18" name=".PingFangSC-Regular"/>
-                        <string key="title">在线压缩,使用tinypng压缩
-每个key每天限制500张图片,
- 压缩后文件会覆盖源文件</string>
+                    <rect key="frame" x="-93" y="230" width="667" height="21"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="在线压缩,使用tinypng压缩,每个key每天限制500张图片,压缩后文件会覆盖源文件" id="pWn-WK-tcT">
+                        <font key="font" metaFont="system" size="18"/>
                         <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
