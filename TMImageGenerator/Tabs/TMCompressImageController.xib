@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TMCompressImageController">
+            <connections>
+                <outlet property="apiKeyButton" destination="7Pk-xi-wVg" id="XZ7-8t-KFj"/>
+                <outlet property="apiKeyTF" destination="NDe-JC-61i" id="AB3-IS-7RT"/>
+                <outlet property="generateButton" destination="GOi-tx-7dM" id="kBY-Du-wHz"/>
+                <outlet property="localLoadingView" destination="H08-an-CjF" id="KGE-B9-VpA"/>
+                <outlet property="pathTF" destination="GnA-za-sGp" id="O3y-7P-s1b"/>
+                <outlet property="sepratorLine" destination="muX-ZK-RIT" id="MY5-RP-JhX"/>
+                <outlet property="tinypngLoadingView" destination="Tci-Xf-Qow" id="mKl-LI-3Ye"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="395"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-za-sGp">
+                    <rect key="frame" x="20" y="354" width="300" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="ONk-Jy-oB3"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="KYN-it-fho">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NDe-JC-61i">
+                    <rect key="frame" x="20" y="303" width="300" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="0Gd-eC-mve"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="在tinyfy申请的API key" drawsBackground="YES" id="1af-ut-T9p">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T6b-Xb-U5p">
+                    <rect key="frame" x="334" y="347" width="94" height="32"/>
+                    <buttonCell key="cell" type="push" title="选择目录" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hKZ-zM-Bw1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectPath:" target="-2" id="YQt-vC-rAA"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GOi-tx-7dM">
+                    <rect key="frame" x="334" y="296" width="94" height="32"/>
+                    <buttonCell key="cell" type="push" title="开始压缩" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9fF-ro-JuV">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="startCompress:" target="-2" id="9gX-CJ-pkU"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Pk-xi-wVg">
+                    <rect key="frame" x="18" y="257" width="97" height="18"/>
+                    <buttonCell key="cell" type="check" title="记住API Key" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="hQz-C6-roW">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XNk-ha-kyv">
+                    <rect key="frame" x="199" y="249" width="127" height="32"/>
+                    <buttonCell key="cell" type="push" title="去申请API key" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SMV-0k-135">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="requestAPIKEYOfTinyfy:" target="-2" id="aTD-2m-nef"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1t5-0N-jjh">
+                    <rect key="frame" x="180" y="86" width="120" height="32"/>
+                    <buttonCell key="cell" type="push" title="选择目录压缩" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QA9-c8-fpI">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="compress:" target="-2" id="VO4-ZN-g73"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="muX-ZK-RIT" colorLabel="IBBuiltInLabel-Red">
+                    <rect key="frame" x="0.0" y="195" width="480" height="5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="raF-bs-Ofq"/>
+                    </constraints>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ez0-qk-JJN">
+                    <rect key="frame" x="98" y="144" width="285" height="21"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="本地压缩,压缩后文件会覆盖源文件" id="fww-Yb-r3q">
+                        <font key="font" size="18" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mh0-bX-ILA">
+                    <rect key="frame" x="118" y="230" width="244" height="63"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" id="pWn-WK-tcT">
+                        <font key="font" size="18" name=".PingFangSC-Regular"/>
+                        <string key="title">在线压缩,使用tinypng压缩
+每个key每天限制500张图片,
+ 压缩后文件会覆盖源文件</string>
+                        <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Tci-Xf-Qow">
+                    <rect key="frame" x="340" y="267" width="16" height="16"/>
+                </progressIndicator>
+                <progressIndicator wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="H08-an-CjF">
+                    <rect key="frame" x="314" y="96" width="16" height="16"/>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GnA-za-sGp" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="0gl-0M-B0V"/>
+                <constraint firstItem="H08-an-CjF" firstAttribute="centerY" secondItem="1t5-0N-jjh" secondAttribute="centerY" id="6oe-gm-ezZ"/>
+                <constraint firstItem="GnA-za-sGp" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="7HA-yD-9DT"/>
+                <constraint firstItem="GOi-tx-7dM" firstAttribute="height" secondItem="T6b-Xb-U5p" secondAttribute="height" id="ChR-fz-5kE"/>
+                <constraint firstItem="XNk-ha-kyv" firstAttribute="centerY" secondItem="7Pk-xi-wVg" secondAttribute="centerY" id="DgR-dQ-O64"/>
+                <constraint firstItem="ez0-qk-JJN" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="EZO-6y-c1c"/>
+                <constraint firstItem="7Pk-xi-wVg" firstAttribute="leading" secondItem="NDe-JC-61i" secondAttribute="leading" id="Fve-oG-3tX"/>
+                <constraint firstItem="GOi-tx-7dM" firstAttribute="centerY" secondItem="NDe-JC-61i" secondAttribute="centerY" id="I2G-Mr-PCv"/>
+                <constraint firstItem="H08-an-CjF" firstAttribute="leading" secondItem="1t5-0N-jjh" secondAttribute="trailing" constant="20" id="JeX-TY-Gdy"/>
+                <constraint firstItem="Mh0-bX-ILA" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="K1D-EB-9bE"/>
+                <constraint firstItem="7Pk-xi-wVg" firstAttribute="top" secondItem="NDe-JC-61i" secondAttribute="bottom" constant="30" id="N0V-Cb-gpr"/>
+                <constraint firstItem="XNk-ha-kyv" firstAttribute="trailing" secondItem="NDe-JC-61i" secondAttribute="trailing" id="NBS-hh-J30"/>
+                <constraint firstAttribute="trailing" secondItem="muX-ZK-RIT" secondAttribute="trailing" id="NXJ-R2-J48"/>
+                <constraint firstItem="Tci-Xf-Qow" firstAttribute="leading" secondItem="GOi-tx-7dM" secondAttribute="leading" id="OtV-m5-36Y"/>
+                <constraint firstItem="GOi-tx-7dM" firstAttribute="top" secondItem="T6b-Xb-U5p" secondAttribute="bottom" constant="30" id="P1O-Tv-vvo"/>
+                <constraint firstItem="muX-ZK-RIT" firstAttribute="top" secondItem="Mh0-bX-ILA" secondAttribute="bottom" constant="30" id="VIs-qy-MhJ"/>
+                <constraint firstItem="NDe-JC-61i" firstAttribute="width" secondItem="GnA-za-sGp" secondAttribute="width" id="VNh-7p-caZ"/>
+                <constraint firstItem="NDe-JC-61i" firstAttribute="height" secondItem="GnA-za-sGp" secondAttribute="height" id="Z5J-Vi-PFV"/>
+                <constraint firstItem="T6b-Xb-U5p" firstAttribute="leading" secondItem="GnA-za-sGp" secondAttribute="trailing" constant="20" id="aEB-ej-oF6"/>
+                <constraint firstItem="1t5-0N-jjh" firstAttribute="top" secondItem="ez0-qk-JJN" secondAttribute="bottom" constant="30" id="gJx-rI-Cx8"/>
+                <constraint firstItem="muX-ZK-RIT" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="kex-wM-UeN"/>
+                <constraint firstItem="T6b-Xb-U5p" firstAttribute="centerY" secondItem="GnA-za-sGp" secondAttribute="centerY" id="mpa-16-y9s"/>
+                <constraint firstItem="Tci-Xf-Qow" firstAttribute="top" secondItem="GOi-tx-7dM" secondAttribute="bottom" constant="20" id="osa-lD-Scq"/>
+                <constraint firstItem="NDe-JC-61i" firstAttribute="centerX" secondItem="GnA-za-sGp" secondAttribute="centerX" id="p8O-DH-eJP"/>
+                <constraint firstItem="GOi-tx-7dM" firstAttribute="width" secondItem="T6b-Xb-U5p" secondAttribute="width" id="pQD-Ek-Mxb"/>
+                <constraint firstItem="ez0-qk-JJN" firstAttribute="top" secondItem="muX-ZK-RIT" secondAttribute="bottom" constant="30" id="rVd-CD-JVU"/>
+                <constraint firstItem="1t5-0N-jjh" firstAttribute="centerX" secondItem="ez0-qk-JJN" secondAttribute="centerX" id="vOC-Ns-kfQ"/>
+                <constraint firstItem="GOi-tx-7dM" firstAttribute="centerX" secondItem="T6b-Xb-U5p" secondAttribute="centerX" id="wGY-qI-iJS"/>
+                <constraint firstItem="muX-ZK-RIT" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ymt-sK-CXL"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="215.5"/>
+        </customView>
+    </objects>
+</document>

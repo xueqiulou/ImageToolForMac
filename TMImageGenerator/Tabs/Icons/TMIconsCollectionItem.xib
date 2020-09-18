@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TMIconsCollectionItem">
+            <connections>
+                <outlet property="label" destination="t33-mj-xjM" id="7yp-Un-8bR"/>
+                <outlet property="lineView" destination="Sj3-BB-WGk" id="2fA-Bl-9bh"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="item" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Sj3-BB-WGk">
+                    <rect key="frame" x="20" y="265" width="470" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="05k-9T-CZ0"/>
+                    </constraints>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DP7-Rj-w1J">
+                    <rect key="frame" x="235" y="116" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="7di-bd-par"/>
+                        <constraint firstAttribute="height" constant="40" id="8DC-US-jQJ"/>
+                        <constraint firstAttribute="width" secondItem="DP7-Rj-w1J" secondAttribute="height" multiplier="1:1" id="8Mt-OV-dVk"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="JUJ-9B-w5i"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t33-mj-xjM">
+                    <rect key="frame" x="237" y="90" width="37" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="qd4-OI-APG">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Sj3-BB-WGk" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="5" id="5qx-MQ-ze9"/>
+                <constraint firstItem="t33-mj-xjM" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="Jr8-bk-yKk"/>
+                <constraint firstItem="t33-mj-xjM" firstAttribute="top" secondItem="DP7-Rj-w1J" secondAttribute="bottom" constant="10" id="SaH-mH-yws"/>
+                <constraint firstAttribute="trailing" secondItem="Sj3-BB-WGk" secondAttribute="trailing" constant="20" id="i3p-Vo-zt2"/>
+                <constraint firstItem="Sj3-BB-WGk" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="ijP-mx-5ai"/>
+                <constraint firstItem="DP7-Rj-w1J" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="jTA-fh-b4c"/>
+                <constraint firstItem="DP7-Rj-w1J" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="rjb-yE-iKu"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+    </objects>
+</document>

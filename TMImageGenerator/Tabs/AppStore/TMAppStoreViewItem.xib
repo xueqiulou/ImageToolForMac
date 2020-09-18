@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TMAppStoreViewItem">
+            <connections>
+                <outlet property="imageView" destination="KtB-D2-Vqr" id="uE4-fc-AbX"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="appstore" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="370"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KtB-D2-Vqr">
+                    <rect key="frame" x="-3" y="-3" width="486" height="346"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="photo" id="grO-Um-ODA"/>
+                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="z1s-rL-3Mc">
+                    <rect key="frame" x="216" y="338" width="49" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KcU-ac-fkT"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="选中" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="SzW-9G-eSF">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="z1s-rL-3Mc" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="1mp-Rz-rey"/>
+                <constraint firstItem="KtB-D2-Vqr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="HjJ-ws-pxR"/>
+                <constraint firstAttribute="trailing" secondItem="KtB-D2-Vqr" secondAttribute="trailing" id="RUq-f7-5oc"/>
+                <constraint firstItem="z1s-rL-3Mc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Xim-0q-MZ4"/>
+                <constraint firstItem="KtB-D2-Vqr" firstAttribute="top" secondItem="z1s-rL-3Mc" secondAttribute="bottom" id="ZF3-Ad-hD0"/>
+                <constraint firstAttribute="bottom" secondItem="KtB-D2-Vqr" secondAttribute="bottom" id="izS-C5-1gd"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="105"/>
+        </customView>
+    </objects>
+</document>

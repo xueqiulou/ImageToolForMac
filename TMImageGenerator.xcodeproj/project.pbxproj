@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		831713822502168C006B1B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713812502168C006B1B67 /* AppDelegate.m */; };
+		831713852502168C006B1B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713842502168C006B1B67 /* ViewController.m */; };
+		831713872502168E006B1B67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831713862502168E006B1B67 /* Assets.xcassets */; };
+		8317138A2502168E006B1B67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831713882502168E006B1B67 /* Main.storyboard */; };
+		8317138D2502168E006B1B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8317138C2502168E006B1B67 /* main.m */; };
+		831713982502168E006B1B67 /* TMImageGeneratorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713972502168E006B1B67 /* TMImageGeneratorTests.m */; };
+		831713A32502168E006B1B67 /* TMImageGeneratorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713A22502168E006B1B67 /* TMImageGeneratorUITests.m */; };
+		831713B2250216E7006B1B67 /* TMDragToDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713B1250216E7006B1B67 /* TMDragToDisplayView.m */; };
+		831713B7250616A9006B1B67 /* TMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713B6250616A8006B1B67 /* TMRootViewController.m */; };
+		831713BF250629CF006B1B67 /* TMGenerateScaleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713BD250629CF006B1B67 /* TMGenerateScaleImageController.m */; };
+		831713C0250629CF006B1B67 /* TMGenerateScaleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831713BE250629CF006B1B67 /* TMGenerateScaleImageController.xib */; };
+		831713CB25062B18006B1B67 /* TMGenerateIconsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713C925062B18006B1B67 /* TMGenerateIconsController.m */; };
+		831713CC25062B18006B1B67 /* TMGenerateIconsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831713CA25062B18006B1B67 /* TMGenerateIconsController.xib */; };
+		831713D025062D09006B1B67 /* TMAppStoreImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713CE25062D09006B1B67 /* TMAppStoreImageController.m */; };
+		831713D125062D09006B1B67 /* TMAppStoreImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831713CF25062D09006B1B67 /* TMAppStoreImageController.xib */; };
+		831713D525064639006B1B67 /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831713D425064639006B1B67 /* Automator.framework */; };
+		831713DB25077E22006B1B67 /* TMImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713DA25077E21006B1B67 /* TMImageTools.m */; };
+		831713E725078CD2006B1B67 /* libwebpmux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 831713E425078CD2006B1B67 /* libwebpmux.a */; };
+		831713E825078CD2006B1B67 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 831713E525078CD2006B1B67 /* libwebp.a */; };
+		831713E925078CD2006B1B67 /* libwebpdemux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 831713E625078CD2006B1B67 /* libwebpdemux.a */; };
+		831713EC25078D03006B1B67 /* WebPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713EB25078D03006B1B67 /* WebPImage.m */; };
+		831713F52507BAD0006B1B67 /* TMIconsCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 831713F32507BAD0006B1B67 /* TMIconsCollectionItem.m */; };
+		831713F62507BAD0006B1B67 /* TMIconsCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 831713F42507BAD0006B1B67 /* TMIconsCollectionItem.xib */; };
+		833DB1E6250873B40048E8FF /* TMTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 833DB1E5250873B40048E8FF /* TMTestVC.m */; };
+		833DB1EE2508E2AD0048E8FF /* TMConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833DB1ED2508E2AD0048E8FF /* TMConfiguration.plist */; };
+		833DB1F02508E5760048E8FF /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833DB1EF2508E5760048E8FF /* HeaderView.xib */; };
+		833DB1F32508E76F0048E8FF /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 833DB1F22508E76F0048E8FF /* HeaderView.m */; };
+		833DB1F72508F88E0048E8FF /* TMIconItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 833DB1F52508F88E0048E8FF /* TMIconItem.m */; };
+		833DB1F82508F88E0048E8FF /* TMIconItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833DB1F62508F88E0048E8FF /* TMIconItem.xib */; };
+		83DA87F5250B1160000F0430 /* TMIconsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA87F4250B1160000F0430 /* TMIconsModel.m */; };
+		83DA87F8250B476B000F0430 /* TMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA87F7250B476B000F0430 /* TMDragView.m */; };
+		83DA87FB250B4FFE000F0430 /* TMTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA87FA250B4FFE000F0430 /* TMTableCellView.m */; };
+		83DA87FF250B6F88000F0430 /* TMTestAppStoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA87FD250B6F88000F0430 /* TMTestAppStoreVC.m */; };
+		83DA8800250B6F88000F0430 /* TMTestAppStoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DA87FE250B6F88000F0430 /* TMTestAppStoreVC.xib */; };
+		83DA8804250F0BCB000F0430 /* TMAppStoreNewImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA8802250F0BCB000F0430 /* TMAppStoreNewImageController.m */; };
+		83DA8805250F0BCB000F0430 /* TMAppStoreNewImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DA8803250F0BCB000F0430 /* TMAppStoreNewImageController.xib */; };
+		83DA8809250F0C83000F0430 /* TMAppStoreViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA8807250F0C83000F0430 /* TMAppStoreViewItem.m */; };
+		83DA880A250F0C83000F0430 /* TMAppStoreViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DA8808250F0C83000F0430 /* TMAppStoreViewItem.xib */; };
+		83DA880D250F0D81000F0430 /* TMAppStoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA880C250F0D81000F0430 /* TMAppStoreModel.m */; };
+		83DA88252512017F000F0430 /* libimagequant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DA88242512017E000F0430 /* libimagequant.a */; };
+		83DA885025120C6A000F0430 /* tiny_compress.py in Resources */ = {isa = PBXBuildFile; fileRef = 83DA884F25120C69000F0430 /* tiny_compress.py */; };
+		83DA885325120CCC000F0430 /* CocoaPython.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA885225120CCB000F0430 /* CocoaPython.swift */; };
+		83DA885825120D5E000F0430 /* TMCompressImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA885625120D5E000F0430 /* TMCompressImageController.m */; };
+		83DA885925120D5E000F0430 /* TMCompressImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DA885725120D5E000F0430 /* TMCompressImageController.xib */; };
+		83DA885B2513631C000F0430 /* pngquant in Resources */ = {isa = PBXBuildFile; fileRef = 83DA885A2513631C000F0430 /* pngquant */; };
+		83DA88AC25138165000F0430 /* TMCompressTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DA88AB25138165000F0430 /* TMCompressTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		831713942502168E006B1B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831713752502168C006B1B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8317137C2502168C006B1B67;
+			remoteInfo = TMImageGenerator;
+		};
+		8317139F2502168E006B1B67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 831713752502168C006B1B67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8317137C2502168C006B1B67;
+			remoteInfo = TMImageGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8317137D2502168C006B1B67 /* TMImageGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMImageGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		831713802502168C006B1B67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		831713812502168C006B1B67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		831713832502168C006B1B67 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		831713842502168C006B1B67 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		831713862502168E006B1B67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		831713892502168E006B1B67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8317138B2502168E006B1B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8317138C2502168E006B1B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8317138E2502168E006B1B67 /* TMImageGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TMImageGenerator.entitlements; sourceTree = "<group>"; };
+		831713932502168E006B1B67 /* TMImageGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMImageGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		831713972502168E006B1B67 /* TMImageGeneratorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMImageGeneratorTests.m; sourceTree = "<group>"; };
+		831713992502168E006B1B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8317139E2502168E006B1B67 /* TMImageGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMImageGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		831713A22502168E006B1B67 /* TMImageGeneratorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMImageGeneratorUITests.m; sourceTree = "<group>"; };
+		831713A42502168F006B1B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831713B0250216E7006B1B67 /* TMDragToDisplayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDragToDisplayView.h; sourceTree = "<group>"; };
+		831713B1250216E7006B1B67 /* TMDragToDisplayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDragToDisplayView.m; sourceTree = "<group>"; };
+		831713B5250616A8006B1B67 /* TMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMRootViewController.h; sourceTree = "<group>"; };
+		831713B6250616A8006B1B67 /* TMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMRootViewController.m; sourceTree = "<group>"; };
+		831713BC250629CF006B1B67 /* TMGenerateScaleImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMGenerateScaleImageController.h; sourceTree = "<group>"; };
+		831713BD250629CF006B1B67 /* TMGenerateScaleImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMGenerateScaleImageController.m; sourceTree = "<group>"; };
+		831713BE250629CF006B1B67 /* TMGenerateScaleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMGenerateScaleImageController.xib; sourceTree = "<group>"; };
+		831713C825062B18006B1B67 /* TMGenerateIconsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMGenerateIconsController.h; sourceTree = "<group>"; };
+		831713C925062B18006B1B67 /* TMGenerateIconsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMGenerateIconsController.m; sourceTree = "<group>"; };
+		831713CA25062B18006B1B67 /* TMGenerateIconsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMGenerateIconsController.xib; sourceTree = "<group>"; };
+		831713CD25062D09006B1B67 /* TMAppStoreImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppStoreImageController.h; sourceTree = "<group>"; };
+		831713CE25062D09006B1B67 /* TMAppStoreImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppStoreImageController.m; sourceTree = "<group>"; };
+		831713CF25062D09006B1B67 /* TMAppStoreImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMAppStoreImageController.xib; sourceTree = "<group>"; };
+		831713D425064639006B1B67 /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = System/Library/Frameworks/Automator.framework; sourceTree = SDKROOT; };
+		831713D925077E21006B1B67 /* TMImageTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMImageTools.h; sourceTree = "<group>"; };
+		831713DA25077E21006B1B67 /* TMImageTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMImageTools.m; sourceTree = "<group>"; };
+		831713DE25078CC3006B1B67 /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
+		831713DF25078CC3006B1B67 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		831713E025078CC3006B1B67 /* demux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demux.h; sourceTree = "<group>"; };
+		831713E125078CC3006B1B67 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
+		831713E225078CC3006B1B67 /* encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encode.h; sourceTree = "<group>"; };
+		831713E325078CC3006B1B67 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		831713E425078CD2006B1B67 /* libwebpmux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpmux.a; sourceTree = "<group>"; };
+		831713E525078CD2006B1B67 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
+		831713E625078CD2006B1B67 /* libwebpdemux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebpdemux.a; sourceTree = "<group>"; };
+		831713EA25078D03006B1B67 /* WebPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPImage.h; sourceTree = "<group>"; };
+		831713EB25078D03006B1B67 /* WebPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPImage.m; sourceTree = "<group>"; };
+		831713F22507BAD0006B1B67 /* TMIconsCollectionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMIconsCollectionItem.h; sourceTree = "<group>"; };
+		831713F32507BAD0006B1B67 /* TMIconsCollectionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMIconsCollectionItem.m; sourceTree = "<group>"; };
+		831713F42507BAD0006B1B67 /* TMIconsCollectionItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMIconsCollectionItem.xib; sourceTree = "<group>"; };
+		833DB1E4250873B40048E8FF /* TMTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTestVC.h; sourceTree = "<group>"; };
+		833DB1E5250873B40048E8FF /* TMTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTestVC.m; sourceTree = "<group>"; };
+		833DB1ED2508E2AD0048E8FF /* TMConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TMConfiguration.plist; sourceTree = "<group>"; };
+		833DB1EF2508E5760048E8FF /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		833DB1F12508E76F0048E8FF /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		833DB1F22508E76F0048E8FF /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		833DB1F42508F88E0048E8FF /* TMIconItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMIconItem.h; sourceTree = "<group>"; };
+		833DB1F52508F88E0048E8FF /* TMIconItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMIconItem.m; sourceTree = "<group>"; };
+		833DB1F62508F88E0048E8FF /* TMIconItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMIconItem.xib; sourceTree = "<group>"; };
+		83DA87F3250B1160000F0430 /* TMIconsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMIconsModel.h; sourceTree = "<group>"; };
+		83DA87F4250B1160000F0430 /* TMIconsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMIconsModel.m; sourceTree = "<group>"; };
+		83DA87F6250B476B000F0430 /* TMDragView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDragView.h; sourceTree = "<group>"; };
+		83DA87F7250B476B000F0430 /* TMDragView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDragView.m; sourceTree = "<group>"; };
+		83DA87F9250B4FFE000F0430 /* TMTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTableCellView.h; sourceTree = "<group>"; };
+		83DA87FA250B4FFE000F0430 /* TMTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTableCellView.m; sourceTree = "<group>"; };
+		83DA87FC250B6F88000F0430 /* TMTestAppStoreVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTestAppStoreVC.h; sourceTree = "<group>"; };
+		83DA87FD250B6F88000F0430 /* TMTestAppStoreVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTestAppStoreVC.m; sourceTree = "<group>"; };
+		83DA87FE250B6F88000F0430 /* TMTestAppStoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMTestAppStoreVC.xib; sourceTree = "<group>"; };
+		83DA8801250F0BCB000F0430 /* TMAppStoreNewImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppStoreNewImageController.h; sourceTree = "<group>"; };
+		83DA8802250F0BCB000F0430 /* TMAppStoreNewImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppStoreNewImageController.m; sourceTree = "<group>"; };
+		83DA8803250F0BCB000F0430 /* TMAppStoreNewImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMAppStoreNewImageController.xib; sourceTree = "<group>"; };
+		83DA8806250F0C83000F0430 /* TMAppStoreViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppStoreViewItem.h; sourceTree = "<group>"; };
+		83DA8807250F0C83000F0430 /* TMAppStoreViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppStoreViewItem.m; sourceTree = "<group>"; };
+		83DA8808250F0C83000F0430 /* TMAppStoreViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMAppStoreViewItem.xib; sourceTree = "<group>"; };
+		83DA880B250F0D81000F0430 /* TMAppStoreModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppStoreModel.h; sourceTree = "<group>"; };
+		83DA880C250F0D81000F0430 /* TMAppStoreModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppStoreModel.m; sourceTree = "<group>"; };
+		83DA88242512017E000F0430 /* libimagequant.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libimagequant.a; sourceTree = "<group>"; };
+		83DA8827251201E0000F0430 /* libimagequant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libimagequant.h; sourceTree = "<group>"; };
+		83DA884F25120C69000F0430 /* tiny_compress.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tiny_compress.py; sourceTree = "<group>"; };
+		83DA885125120CCB000F0430 /* TMImageGenerator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMImageGenerator-Bridging-Header.h"; sourceTree = "<group>"; };
+		83DA885225120CCB000F0430 /* CocoaPython.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPython.swift; sourceTree = "<group>"; };
+		83DA885525120D5E000F0430 /* TMCompressImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCompressImageController.h; sourceTree = "<group>"; };
+		83DA885625120D5E000F0430 /* TMCompressImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCompressImageController.m; sourceTree = "<group>"; };
+		83DA885725120D5E000F0430 /* TMCompressImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMCompressImageController.xib; sourceTree = "<group>"; };
+		83DA885A2513631C000F0430 /* pngquant */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngquant; sourceTree = "<group>"; };
+		83DA88AA25138165000F0430 /* TMCompressTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMCompressTool.h; sourceTree = "<group>"; };
+		83DA88AB25138165000F0430 /* TMCompressTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMCompressTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8317137A2502168C006B1B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DA88252512017F000F0430 /* libimagequant.a in Frameworks */,
+				831713E725078CD2006B1B67 /* libwebpmux.a in Frameworks */,
+				831713E925078CD2006B1B67 /* libwebpdemux.a in Frameworks */,
+				831713D525064639006B1B67 /* Automator.framework in Frameworks */,
+				831713E825078CD2006B1B67 /* libwebp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831713902502168E006B1B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8317139B2502168E006B1B67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		831713742502168C006B1B67 = {
+			isa = PBXGroup;
+			children = (
+				8317137F2502168C006B1B67 /* TMImageGenerator */,
+				831713962502168E006B1B67 /* TMImageGeneratorTests */,
+				831713A12502168E006B1B67 /* TMImageGeneratorUITests */,
+				8317137E2502168C006B1B67 /* Products */,
+				831713D325064639006B1B67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8317137E2502168C006B1B67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8317137D2502168C006B1B67 /* TMImageGenerator.app */,
+				831713932502168E006B1B67 /* TMImageGeneratorTests.xctest */,
+				8317139E2502168E006B1B67 /* TMImageGeneratorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8317137F2502168C006B1B67 /* TMImageGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				831713DC25078CB4006B1B67 /* Resource */,
+				831713D825077DBB006B1B67 /* Tools */,
+				831713BB250629A9006B1B67 /* Tabs */,
+				831713802502168C006B1B67 /* AppDelegate.h */,
+				831713812502168C006B1B67 /* AppDelegate.m */,
+				831713B5250616A8006B1B67 /* TMRootViewController.h */,
+				831713B6250616A8006B1B67 /* TMRootViewController.m */,
+				831713832502168C006B1B67 /* ViewController.h */,
+				831713842502168C006B1B67 /* ViewController.m */,
+				831713B0250216E7006B1B67 /* TMDragToDisplayView.h */,
+				831713B1250216E7006B1B67 /* TMDragToDisplayView.m */,
+				831713862502168E006B1B67 /* Assets.xcassets */,
+				831713882502168E006B1B67 /* Main.storyboard */,
+				8317138B2502168E006B1B67 /* Info.plist */,
+				8317138C2502168E006B1B67 /* main.m */,
+				8317138E2502168E006B1B67 /* TMImageGenerator.entitlements */,
+			);
+			path = TMImageGenerator;
+			sourceTree = "<group>";
+		};
+		831713962502168E006B1B67 /* TMImageGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				831713972502168E006B1B67 /* TMImageGeneratorTests.m */,
+				831713992502168E006B1B67 /* Info.plist */,
+			);
+			path = TMImageGeneratorTests;
+			sourceTree = "<group>";
+		};
+		831713A12502168E006B1B67 /* TMImageGeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				831713A22502168E006B1B67 /* TMImageGeneratorUITests.m */,
+				831713A42502168F006B1B67 /* Info.plist */,
+			);
+			path = TMImageGeneratorUITests;
+			sourceTree = "<group>";
+		};
+		831713BB250629A9006B1B67 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				83DA885425120D37000F0430 /* CompressImage */,
+				831713D225062D0F006B1B67 /* AppStore */,
+				831713C225062AC3006B1B67 /* Icons */,
+				831713C125062AAA006B1B67 /* ScaleImage */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		831713C125062AAA006B1B67 /* ScaleImage */ = {
+			isa = PBXGroup;
+			children = (
+				831713BC250629CF006B1B67 /* TMGenerateScaleImageController.h */,
+				831713BD250629CF006B1B67 /* TMGenerateScaleImageController.m */,
+				831713BE250629CF006B1B67 /* TMGenerateScaleImageController.xib */,
+			);
+			path = ScaleImage;
+			sourceTree = "<group>";
+		};
+		831713C225062AC3006B1B67 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				831713C825062B18006B1B67 /* TMGenerateIconsController.h */,
+				831713C925062B18006B1B67 /* TMGenerateIconsController.m */,
+				831713CA25062B18006B1B67 /* TMGenerateIconsController.xib */,
+				833DB1F42508F88E0048E8FF /* TMIconItem.h */,
+				833DB1F52508F88E0048E8FF /* TMIconItem.m */,
+				833DB1F62508F88E0048E8FF /* TMIconItem.xib */,
+				831713F22507BAD0006B1B67 /* TMIconsCollectionItem.h */,
+				831713F32507BAD0006B1B67 /* TMIconsCollectionItem.m */,
+				831713F42507BAD0006B1B67 /* TMIconsCollectionItem.xib */,
+				833DB1F12508E76F0048E8FF /* HeaderView.h */,
+				833DB1F22508E76F0048E8FF /* HeaderView.m */,
+				833DB1EF2508E5760048E8FF /* HeaderView.xib */,
+				833DB1E4250873B40048E8FF /* TMTestVC.h */,
+				833DB1E5250873B40048E8FF /* TMTestVC.m */,
+				83DA87F3250B1160000F0430 /* TMIconsModel.h */,
+				83DA87F4250B1160000F0430 /* TMIconsModel.m */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		831713D225062D0F006B1B67 /* AppStore */ = {
+			isa = PBXGroup;
+			children = (
+				831713CD25062D09006B1B67 /* TMAppStoreImageController.h */,
+				831713CE25062D09006B1B67 /* TMAppStoreImageController.m */,
+				831713CF25062D09006B1B67 /* TMAppStoreImageController.xib */,
+				83DA87F6250B476B000F0430 /* TMDragView.h */,
+				83DA87F7250B476B000F0430 /* TMDragView.m */,
+				83DA87F9250B4FFE000F0430 /* TMTableCellView.h */,
+				83DA87FA250B4FFE000F0430 /* TMTableCellView.m */,
+				83DA87FC250B6F88000F0430 /* TMTestAppStoreVC.h */,
+				83DA87FD250B6F88000F0430 /* TMTestAppStoreVC.m */,
+				83DA87FE250B6F88000F0430 /* TMTestAppStoreVC.xib */,
+				83DA8801250F0BCB000F0430 /* TMAppStoreNewImageController.h */,
+				83DA8802250F0BCB000F0430 /* TMAppStoreNewImageController.m */,
+				83DA8803250F0BCB000F0430 /* TMAppStoreNewImageController.xib */,
+				83DA8806250F0C83000F0430 /* TMAppStoreViewItem.h */,
+				83DA8807250F0C83000F0430 /* TMAppStoreViewItem.m */,
+				83DA8808250F0C83000F0430 /* TMAppStoreViewItem.xib */,
+				83DA880B250F0D81000F0430 /* TMAppStoreModel.h */,
+				83DA880C250F0D81000F0430 /* TMAppStoreModel.m */,
+			);
+			path = AppStore;
+			sourceTree = "<group>";
+		};
+		831713D325064639006B1B67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				831713D425064639006B1B67 /* Automator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		831713D825077DBB006B1B67 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				831713EA25078D03006B1B67 /* WebPImage.h */,
+				831713EB25078D03006B1B67 /* WebPImage.m */,
+				831713D925077E21006B1B67 /* TMImageTools.h */,
+				831713DA25077E21006B1B67 /* TMImageTools.m */,
+				83DA885225120CCB000F0430 /* CocoaPython.swift */,
+				83DA885125120CCB000F0430 /* TMImageGenerator-Bridging-Header.h */,
+				83DA88AA25138165000F0430 /* TMCompressTool.h */,
+				83DA88AB25138165000F0430 /* TMCompressTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		831713DC25078CB4006B1B67 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				83DA884E25120C45000F0430 /* Script */,
+				83DA8826251201AE000F0430 /* pngquant */,
+				83DA88242512017E000F0430 /* libimagequant.a */,
+				831713E525078CD2006B1B67 /* libwebp.a */,
+				831713E625078CD2006B1B67 /* libwebpdemux.a */,
+				831713E425078CD2006B1B67 /* libwebpmux.a */,
+				831713DD25078CC3006B1B67 /* webp */,
+				833DB1ED2508E2AD0048E8FF /* TMConfiguration.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		831713DD25078CC3006B1B67 /* webp */ = {
+			isa = PBXGroup;
+			children = (
+				831713DE25078CC3006B1B67 /* mux.h */,
+				831713DF25078CC3006B1B67 /* types.h */,
+				831713E025078CC3006B1B67 /* demux.h */,
+				831713E125078CC3006B1B67 /* mux_types.h */,
+				831713E225078CC3006B1B67 /* encode.h */,
+				831713E325078CC3006B1B67 /* decode.h */,
+			);
+			path = webp;
+			sourceTree = "<group>";
+		};
+		83DA8826251201AE000F0430 /* pngquant */ = {
+			isa = PBXGroup;
+			children = (
+				83DA8827251201E0000F0430 /* libimagequant.h */,
+			);
+			path = pngquant;
+			sourceTree = "<group>";
+		};
+		83DA884E25120C45000F0430 /* Script */ = {
+			isa = PBXGroup;
+			children = (
+				83DA885A2513631C000F0430 /* pngquant */,
+				83DA884F25120C69000F0430 /* tiny_compress.py */,
+			);
+			path = Script;
+			sourceTree = "<group>";
+		};
+		83DA885425120D37000F0430 /* CompressImage */ = {
+			isa = PBXGroup;
+			children = (
+				83DA885525120D5E000F0430 /* TMCompressImageController.h */,
+				83DA885625120D5E000F0430 /* TMCompressImageController.m */,
+				83DA885725120D5E000F0430 /* TMCompressImageController.xib */,
+			);
+			name = CompressImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8317137C2502168C006B1B67 /* TMImageGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831713A72502168F006B1B67 /* Build configuration list for PBXNativeTarget "TMImageGenerator" */;
+			buildPhases = (
+				831713792502168C006B1B67 /* Sources */,
+				8317137A2502168C006B1B67 /* Frameworks */,
+				8317137B2502168C006B1B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMImageGenerator;
+			productName = TMImageGenerator;
+			productReference = 8317137D2502168C006B1B67 /* TMImageGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		831713922502168E006B1B67 /* TMImageGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831713AA2502168F006B1B67 /* Build configuration list for PBXNativeTarget "TMImageGeneratorTests" */;
+			buildPhases = (
+				8317138F2502168E006B1B67 /* Sources */,
+				831713902502168E006B1B67 /* Frameworks */,
+				831713912502168E006B1B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				831713952502168E006B1B67 /* PBXTargetDependency */,
+			);
+			name = TMImageGeneratorTests;
+			productName = TMImageGeneratorTests;
+			productReference = 831713932502168E006B1B67 /* TMImageGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8317139D2502168E006B1B67 /* TMImageGeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831713AD2502168F006B1B67 /* Build configuration list for PBXNativeTarget "TMImageGeneratorUITests" */;
+			buildPhases = (
+				8317139A2502168E006B1B67 /* Sources */,
+				8317139B2502168E006B1B67 /* Frameworks */,
+				8317139C2502168E006B1B67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				831713A02502168E006B1B67 /* PBXTargetDependency */,
+			);
+			name = TMImageGeneratorUITests;
+			productName = TMImageGeneratorUITests;
+			productReference = 8317139E2502168E006B1B67 /* TMImageGeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831713752502168C006B1B67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = TM728;
+				TargetAttributes = {
+					8317137C2502168C006B1B67 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					831713922502168E006B1B67 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8317137C2502168C006B1B67;
+					};
+					8317139D2502168E006B1B67 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 8317137C2502168C006B1B67;
+					};
+				};
+			};
+			buildConfigurationList = 831713782502168C006B1B67 /* Build configuration list for PBXProject "TMImageGenerator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 831713742502168C006B1B67;
+			productRefGroup = 8317137E2502168C006B1B67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8317137C2502168C006B1B67 /* TMImageGenerator */,
+				831713922502168E006B1B67 /* TMImageGeneratorTests */,
+				8317139D2502168E006B1B67 /* TMImageGeneratorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8317137B2502168C006B1B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833DB1F82508F88E0048E8FF /* TMIconItem.xib in Resources */,
+				83DA8805250F0BCB000F0430 /* TMAppStoreNewImageController.xib in Resources */,
+				831713872502168E006B1B67 /* Assets.xcassets in Resources */,
+				83DA885B2513631C000F0430 /* pngquant in Resources */,
+				831713D125062D09006B1B67 /* TMAppStoreImageController.xib in Resources */,
+				83DA885925120D5E000F0430 /* TMCompressImageController.xib in Resources */,
+				83DA880A250F0C83000F0430 /* TMAppStoreViewItem.xib in Resources */,
+				83DA885025120C6A000F0430 /* tiny_compress.py in Resources */,
+				83DA8800250B6F88000F0430 /* TMTestAppStoreVC.xib in Resources */,
+				831713F62507BAD0006B1B67 /* TMIconsCollectionItem.xib in Resources */,
+				833DB1F02508E5760048E8FF /* HeaderView.xib in Resources */,
+				833DB1EE2508E2AD0048E8FF /* TMConfiguration.plist in Resources */,
+				8317138A2502168E006B1B67 /* Main.storyboard in Resources */,
+				831713CC25062B18006B1B67 /* TMGenerateIconsController.xib in Resources */,
+				831713C0250629CF006B1B67 /* TMGenerateScaleImageController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831713912502168E006B1B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8317139C2502168E006B1B67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		831713792502168C006B1B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				833DB1F72508F88E0048E8FF /* TMIconItem.m in Sources */,
+				83DA87FF250B6F88000F0430 /* TMTestAppStoreVC.m in Sources */,
+				83DA87F8250B476B000F0430 /* TMDragView.m in Sources */,
+				833DB1F32508E76F0048E8FF /* HeaderView.m in Sources */,
+				831713CB25062B18006B1B67 /* TMGenerateIconsController.m in Sources */,
+				83DA885325120CCC000F0430 /* CocoaPython.swift in Sources */,
+				831713852502168C006B1B67 /* ViewController.m in Sources */,
+				83DA8804250F0BCB000F0430 /* TMAppStoreNewImageController.m in Sources */,
+				8317138D2502168E006B1B67 /* main.m in Sources */,
+				83DA8809250F0C83000F0430 /* TMAppStoreViewItem.m in Sources */,
+				833DB1E6250873B40048E8FF /* TMTestVC.m in Sources */,
+				831713822502168C006B1B67 /* AppDelegate.m in Sources */,
+				83DA880D250F0D81000F0430 /* TMAppStoreModel.m in Sources */,
+				831713D025062D09006B1B67 /* TMAppStoreImageController.m in Sources */,
+				83DA88AC25138165000F0430 /* TMCompressTool.m in Sources */,
+				831713B7250616A9006B1B67 /* TMRootViewController.m in Sources */,
+				83DA885825120D5E000F0430 /* TMCompressImageController.m in Sources */,
+				831713BF250629CF006B1B67 /* TMGenerateScaleImageController.m in Sources */,
+				831713DB25077E22006B1B67 /* TMImageTools.m in Sources */,
+				831713B2250216E7006B1B67 /* TMDragToDisplayView.m in Sources */,
+				83DA87F5250B1160000F0430 /* TMIconsModel.m in Sources */,
+				831713EC25078D03006B1B67 /* WebPImage.m in Sources */,
+				831713F52507BAD0006B1B67 /* TMIconsCollectionItem.m in Sources */,
+				83DA87FB250B4FFE000F0430 /* TMTableCellView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8317138F2502168E006B1B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831713982502168E006B1B67 /* TMImageGeneratorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8317139A2502168E006B1B67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				831713A32502168E006B1B67 /* TMImageGeneratorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		831713952502168E006B1B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8317137C2502168C006B1B67 /* TMImageGenerator */;
+			targetProxy = 831713942502168E006B1B67 /* PBXContainerItemProxy */;
+		};
+		831713A02502168E006B1B67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8317137C2502168C006B1B67 /* TMImageGenerator */;
+			targetProxy = 8317139F2502168E006B1B67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		831713882502168E006B1B67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831713892502168E006B1B67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		831713A52502168F006B1B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		831713A62502168F006B1B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		831713A82502168F006B1B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMImageGenerator/TMImageGenerator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HHN8C98N3L;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = TMImageGenerator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TMImageGenerator/Resource",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = autohome.com.cn.oversea.TMImageGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMImageGenerator/Tools/TMImageGenerator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		831713A92502168F006B1B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TMImageGenerator/TMImageGenerator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HHN8C98N3L;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = TMImageGenerator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TMImageGenerator/Resource",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = autohome.com.cn.oversea.TMImageGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TMImageGenerator/Tools/TMImageGenerator-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		831713AB2502168F006B1B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HHN8C98N3L;
+				INFOPLIST_FILE = TMImageGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = autohome.com.cn.oversea.TMImageGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMImageGenerator.app/Contents/MacOS/TMImageGenerator";
+			};
+			name = Debug;
+		};
+		831713AC2502168F006B1B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HHN8C98N3L;
+				INFOPLIST_FILE = TMImageGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = autohome.com.cn.oversea.TMImageGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMImageGenerator.app/Contents/MacOS/TMImageGenerator";
+			};
+			name = Release;
+		};
+		831713AE2502168F006B1B67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HHN8C98N3L;
+				INFOPLIST_FILE = TMImageGeneratorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = autohome.com.cn.oversea.TMImageGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TMImageGenerator;
+			};
+			name = Debug;
+		};
+		831713AF2502168F006B1B67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HHN8C98N3L;
+				INFOPLIST_FILE = TMImageGeneratorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = autohome.com.cn.oversea.TMImageGeneratorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TMImageGenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		831713782502168C006B1B67 /* Build configuration list for PBXProject "TMImageGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831713A52502168F006B1B67 /* Debug */,
+				831713A62502168F006B1B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831713A72502168F006B1B67 /* Build configuration list for PBXNativeTarget "TMImageGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831713A82502168F006B1B67 /* Debug */,
+				831713A92502168F006B1B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831713AA2502168F006B1B67 /* Build configuration list for PBXNativeTarget "TMImageGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831713AB2502168F006B1B67 /* Debug */,
+				831713AC2502168F006B1B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831713AD2502168F006B1B67 /* Build configuration list for PBXNativeTarget "TMImageGeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831713AE2502168F006B1B67 /* Debug */,
+				831713AF2502168F006B1B67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 831713752502168C006B1B67 /* Project object */;
+}
